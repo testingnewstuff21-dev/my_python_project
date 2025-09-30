@@ -28,8 +28,7 @@ def add_block():
     blockchain.add_block(data['data']) # add the block to the blockchain
     blockchain.save_chain() # save the blockchain to a file
     new_block = blockchain.chain[-1] # get the newly added block
-    # return the details of the new block
-    block_data = {
+    block_data = { # prepare the block data to return
         'index': new_block.index,
         'previous_hash': new_block.previous_hash,
         'timestamp': new_block.timestamp,
