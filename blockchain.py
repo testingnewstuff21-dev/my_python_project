@@ -98,7 +98,7 @@ class Blockchain:
 
 
 if __name__ == "__main__":
-    blockchain = Blockchain()
+    blockchain = Blockchain() # create a new blockchain instance
     blockchain.add_block("First real block") # add a block with some data
     blockchain.add_block("Second real block") # add another block with some data
     blockchain.print_chain() # print the entire blockchain
